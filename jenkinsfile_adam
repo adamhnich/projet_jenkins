@@ -48,7 +48,7 @@ pipeline{
 	        stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t adam11/springprojet .'
+                    sh 'docker build -t adam/springprojet .'
                 }
             }
         }
@@ -59,7 +59,7 @@ pipeline{
                    sh 'docker login -u adamhnich -p $dockerhubpwd'
 }
 
-                   sh 'docker push adam11/springprojet'
+                   sh 'docker push adam/springprojet'
                 }
             }
         }
