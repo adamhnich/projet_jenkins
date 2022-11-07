@@ -59,7 +59,7 @@ pipeline{
                    sh 'docker login -u adamhnich -p $dockerhubpwd'
 }
 
-                   sh 'docker push adamhnich/springprojet'
+                   sh 'docker push adamhnich/springprojet:0.0.1'
                 }
             }
         }
